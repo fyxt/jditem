@@ -1,0 +1,11 @@
+﻿/*导航部分*/
+#navbar{
+    background: url("../images/top.png") repeat-x;
+    height: 29px;
+    border-bottom:1px solid #dadada;
+}
+#nav{
+    height: 29px;
+    width: 1210px;
+    margin: 0 auto;
+}
