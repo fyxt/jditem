@@ -9,3 +9,38 @@
     width: 1210px;
     margin: 0 auto;
 }
+#nav .nav-left{
+    float: left;
+}
+.nav-left ul{
+    line-height: 29px;
+}
+.nav-left li{
+    font-size: 12px;
+    float: left;
+}
+.logo{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../images/top.png")-57px -289px no-repeat;
+}
+.nav-left li a{
+    padding: 0 8px;
+    border-right: 1px solid #DADADA;
+}
+.nav-left .icon-one a{
+    padding: 0px 8px 0px 0px;
+}
+
+
+
+#nav .nav-right{
+    float: right;
+}
+.nav-right ul{
+    line-height: 29px;
+}
+.nav-right li{
+    float: left;
+}
