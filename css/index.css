@@ -2,7 +2,7 @@
 #navbar{
     background: url("../images/top.png") repeat-x;
     height: 29px;
-    border-bottom:1px solid #dadada;
+    box-shadow: 0px 2px 1px #dadada;
 }
 #nav{
     height: 29px;
@@ -22,8 +22,9 @@
 .logo{
     display: inline-block;
     width: 10px;
-    height: 10px;
-    background: url("../images/top.png")-57px -289px no-repeat;
+    height: 11px;
+    background: url("../images/top.png")-57px -288px no-repeat;
+    margin-right: 3px;
 }
 .nav-left li a{
     padding: 0 8px;
@@ -33,14 +34,177 @@
     padding: 0px 8px 0px 0px;
 }
 
-
+/*导航右侧部分*/
 
 #nav .nav-right{
     float: right;
 }
-.nav-right ul{
+#nav .nav-right ul{
     line-height: 29px;
 }
-.nav-right li{
+.nav-right ul li{
     float: left;
+    margin-left: -1px;
+    z-index: 9999;
+}
+.nav-right ul li>a{
+    padding:0 8px;
+    border-right: 1px solid #DADADA;
+}
+.list-li{
+    position: relative;
+}
+.list-li dd{
+    width: 74px;
+    position: absolute;
+}
+
+.list-li dt a{
+
+    padding-left: 10px;
+    padding-right: 16px;
+    margin-right: -1px;
+    border-right: 1px solid #DADADA;
+}
+.list-li .list{
+    position: absolute;
+    top: 11px;
+    right: 4px;
+    width: 7px;
+    height: 4px;
+    display: block;
+    background: url("../images/top.png")-35px -281px no-repeat;
+}
+.list-one dd p{
+    text-align: center;
+}
+.list-one .list{
+    background: url("../images/top.png")-35px -275px no-repeat;
+}
+.nav-right .list-one dd{
+    display: block;
+}
+.list-one dl,dd{
+    background-color: #fff;
+    border: 1px solid #DADADA;
+}
+.list-one dd{
+    border-top: none;
+}
+.list-one dl,dt{
+    width: 74px;
+}
+
+
+
+/*内容部分*/
+#center{
+    width: 1210px;
+    margin: 0 auto;
+}
+#center #header{
+    margin-top: 2px;
+    width: 1210px;
+    height: 90px;
+}
+#header .header-left{
+    margin-top: 20px;
+    float: left;
+    width: 305px;
+    height: 90px;
+    position: relative;
+}
+#header .header-left .header-left-right{
+    position: absolute;
+    top: 0px;
+    left: 183px;
+}
+
+.header-center{
+    float: left;
+    width: 500px;
+    height: 54px;
+    margin-top: 20px;
+    margin-left: 45px;
+    position: relative;
+}
+.header-center .center-submit{
+    border: 3px solid red;
+    border-radius: 3px;
+}
+.center-submit input{
+    padding-left: 6px;
+    float: left;
+    width: 410px;
+    height: 30px;
+    border: none;
+}
+.center-submit button{
+    text-align: center;
+    float: right;
+    background: url("../images/top.png")0 -395px;
+    width: 78px;
+    height: 30px;
+    border: none;
+}
+.header-center .center-text{
+    margin-top: 4px;
+    height: 18px;
+    line-height: 18px;
+}
+.center-text a{
+    padding-right: 6px;
+}
+
+
+.header-right{
+    float: right;
+}
+.header-right .my,.shopping{
+    margin-top: 20px;
+    float: left;
+    height: 26px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    /*text-align: center;*/
+    line-height: 26px;
+    /*position: relative;*/
+}
+.my{
+    background: url("../images/buy.png")-65px -320px;
+}
+.my .icon-left{
+    float: left;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/buy.png")-202px -176px;
+}
+.my a{
+    padding-left: 4px;
+    display: inline-block;
+}
+.my .icon-right{
+    padding-right: 3px;
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    background: url("../images/top.png")-15px -283px;
+}
+
+
+
+
+.header-right .shopping{
+    margin-left: 12px;
+    background: url("../images/buy.png")0 -252px;
+}
+.shopping a{
+    padding-left: 34px;
+}
+.shopping .icon-right{
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    background: url("../images/top.png")-15px -283px;
 }
