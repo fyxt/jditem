@@ -1,210 +1,151 @@
 ﻿/*导航部分*/
-#navbar{
-    background: url("../images/top.png") repeat-x;
-    height: 29px;
-    box-shadow: 0px 2px 1px #dadada;
-}
-#nav{
-    height: 29px;
-    width: 1210px;
-    margin: 0 auto;
-}
-#nav .nav-left{
+#navbar li{
     float: left;
-}
-.nav-left ul{
-    line-height: 29px;
-}
-.nav-left li{
-    font-size: 12px;
-    float: left;
-}
-.logo{
-    display: inline-block;
-    width: 10px;
-    height: 11px;
-    background: url("../images/top.png")-57px -288px no-repeat;
-    margin-right: 3px;
-}
-.nav-left li a{
-    padding: 0 8px;
-    border-right: 1px solid #DADADA;
-}
-.nav-left .icon-one a{
-    padding: 0px 8px 0px 0px;
-}
-
-/*导航右侧部分*/
-
-#nav .nav-right{
-    float: right;
-}
-#nav .nav-right ul{
-    line-height: 29px;
-}
-.nav-right ul li{
-    float: left;
+    position: relative;
     margin-left: -1px;
     z-index: 9999;
 }
-.nav-right ul li>a{
-    padding:0 8px;
-    border-right: 1px solid #DADADA;
+#navbar li a{
+    padding: 0px 8px 0px 8px;
+    border-right: 1px solid #dadada;
 }
-.list-li{
+#nav{
+    width: 1210px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+#navbar{
+    background: #efefef url(../images/top.png) repeat-x;
+    height:31px;
+}
+/*图标公共*/
+.icon-one i{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background:url(../images/top.png) no-repeat;;
+    position: absolute;
+}
+.icon-one .logo{
+    background-position: -57px -289px;
+    left: 4px;
+    top: 10px;
+}
+/*左侧导航*/
+.nav-left{
+    float: left;
     position: relative;
 }
-.list-li dd{
-    width: 74px;
-    position: absolute;
+#nav .icon-one a{
+    padding-left: 18px;
 }
-
-.list-li dt a{
-
-    padding-left: 10px;
-    padding-right: 16px;
-    margin-right: -1px;
-    border-right: 1px solid #DADADA;
+/*右侧导航*/
+.nav-right{
+    float: right;
 }
-.list-li .list{
-    position: absolute;
-    top: 11px;
-    right: 4px;
+.nav-right .list-one .list{
+    top: 13px;
+    right: 5px;
     width: 7px;
     height: 4px;
+    background-position: -35px -281px;
+}
+#nav .list-one a{
+    position: relative;
+    left: 1px;
+    padding-left: 8px;
+    padding-right: 18px;
+}
+/*下拉显示效果*/
+.list-one{
+    /*width: 77px;*/
+}
+.nav-right .list-li .list{
+    background-position: -35px -275px;
+}
+#navbar .list-li dd{
     display: block;
-    background: url("../images/top.png")-35px -281px no-repeat;
-}
-.list-one dd p{
-    text-align: center;
-}
-.list-one .list{
-    background: url("../images/top.png")-35px -275px no-repeat;
-}
-.nav-right .list-one dd{
-    display: block;
-}
-.list-one dl,dd{
     background-color: #fff;
-    border: 1px solid #DADADA;
 }
-.list-one dd{
-    border-top: none;
+#navbar .list-li dd a{
+    border-right: none;
 }
-.list-one dl,dt{
-    width: 74px;
+#navbar .list-li dl{
+    margin-top: 5px;
+    background-color: #fff;
+    outline:#dadada solid 1px;
+    /*border: 1px solid #dadada;*/
+    overflow: hidden;
 }
-
-
-
+#navbar .list-li dt{
+    margin-top: -4px;
+}
 /*内容部分*/
 #center{
     width: 1210px;
     margin: 0 auto;
 }
 #center #header{
-    margin-top: 2px;
-    width: 1210px;
     height: 90px;
 }
 #header .header-left{
-    margin-top: 20px;
-    float: left;
-    width: 305px;
-    height: 90px;
+    width: 324px;
+    height: 68px;
     position: relative;
+    float: left;margin-top: 20px;
 }
-#header .header-left .header-left-right{
+.header-left .header-left-right{
     position: absolute;
     top: 0px;
     left: 183px;
 }
-
+/*搜索框*/
 .header-center{
-    float: left;
     width: 500px;
-    height: 54px;
+    height: 60px;
+    float: left;
     margin-top: 20px;
-    margin-left: 45px;
-    position: relative;
+    margin-left: 20px;
 }
-.header-center .center-submit{
-    border: 3px solid red;
+.center-submit{
+    position: relative;
+    height: 30px;
+    border: 4px solid red;
     border-radius: 3px;
 }
 .center-submit input{
-    padding-left: 6px;
-    float: left;
-    width: 410px;
+    width: 416px;
     height: 30px;
     border: none;
+    padding-left: 5px;
 }
 .center-submit button{
-    text-align: center;
-    float: right;
-    background: url("../images/top.png")0 -395px;
-    width: 78px;
+    width: 79px;
     height: 30px;
     border: none;
+    position: absolute;
+    right: 0px;
+    background: url("../images/top.png")0px -395px;
 }
-.header-center .center-text{
-    margin-top: 4px;
-    height: 18px;
-    line-height: 18px;
+.center-text{
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
 }
-.center-text a{
-    padding-right: 6px;
+.center-text>span,a{
+    padding-right: 5px;
 }
-
-
-.header-right{
-    float: right;
-}
-.header-right .my,.shopping{
-    margin-top: 20px;
-    float: left;
-    height: 26px;
-    border: 1px solid #DDDDDD;
-    border-radius: 2px;
-    /*text-align: center;*/
-    line-height: 26px;
-    /*position: relative;*/
-}
-.my{
-    background: url("../images/buy.png")-65px -320px;
-}
-.my .icon-left{
-    float: left;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url("../images/buy.png")-202px -176px;
-}
-.my a{
-    padding-left: 4px;
-    display: inline-block;
-}
-.my .icon-right{
-    padding-right: 3px;
-    display: inline-block;
-    width: 11px;
-    height: 6px;
-    background: url("../images/top.png")-15px -283px;
+/*头部列表*/
+#navlist{
+    border-radius: 5px 5px 0 0;
+    height: 40px;
+    background: url("../images/top.png")0 -427px;
 }
 
 
 
 
-.header-right .shopping{
-    margin-left: 12px;
-    background: url("../images/buy.png")0 -252px;
-}
-.shopping a{
-    padding-left: 34px;
-}
-.shopping .icon-right{
-    display: inline-block;
-    width: 11px;
-    height: 6px;
-    background: url("../images/top.png")-15px -283px;
-}
+
+
+
